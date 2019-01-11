@@ -1,0 +1,17 @@
+http://purl.obolibrary.org/obo/WBPhenotype_0000180
+http://purl.obolibrary.org/obo/WBPhenotype_0000262
+http://purl.obolibrary.org/obo/WBPhenotype_0000781
+http://purl.obolibrary.org/obo/WBPhenotype_0001399
+http://purl.obolibrary.org/obo/WBPhenotype_0000533
+http://purl.obolibrary.org/obo/WBPhenotype_0001348
+http://purl.obolibrary.org/obo/WBPhenotype_0000196
+http://purl.obolibrary.org/obo/WBPhenotype_0000037
+http://purl.obolibrary.org/obo/WBPhenotype_0001401
+http://purl.obolibrary.org/obo/WBPhenotype_0000870
+http://purl.obolibrary.org/obo/WBPhenotype_0000869
+http://purl.obolibrary.org/obo/WBPhenotype_0001398
+http://purl.obolibrary.org/obo/WBPhenotype_0001028
+http://purl.obolibrary.org/obo/WBPhenotype_0001263
+http://purl.obolibrary.org/obo/WBPhenotype_0000616
+http://purl.obolibrary.org/obo/WBPhenotype_0001674
+http://purl.obolibrary.org/obo/WBPhenotype_0001676

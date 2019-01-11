@@ -1,0 +1,87 @@
+---
+title: "OBO Foundry Download"
+output:
+  html_document:
+    df_print: paged
+editor_options:
+  chunk_output_type: console
+---
+
+# Download OBO Snapshot
+
+```{r metadata}
+#library(jsonlite)
+library(yaml)
+#library(tidyr)
+obo="http://obofoundry.org/registry/ontologies.yml"
+download_dir<-"/data/corpora/obo/"
+
+obo_raw <- yaml.load_file(obo)
+head(obo_raw)
+
+# Make sure a download directory called download exists wherever your working directory is
+if (!dir.exists(download_dir)){
+  print("Directory does not exist, create and run again: ")
+  print(download_dir)
+  stop("Directory does not exist, create and run again: ")
+}
+```
+
+```{r}
+processOBO <-function(x) {
+  id=x$id
+  obsolete="FALSE"
+  purl="unknown"
+  email="unknown"
+  if(!is.null(x[["ontology_purl"]])){
+    purl = x[["ontology_purl"]]
+  }
+  if(!is.null(x[["is_obsolete"]])){
+    obsolete = x[["is_obsolete"]]
+  }
+  if(!is.null(x[["contact"]])){
+    email = x[["contact"]][["email"]]
+  }
+  return(c(obsolete,id,purl,email))
+}
+```
+
+```{r prepare}
+t<-unlist(lapply(obo_raw$ontologies,processOBO))
+df<-data.frame(email=t[seq(4, length(t), 4)],url=t[seq(3, length(t), 4)],o=t[seq(2, length(t), 4)],obsolete=t[seq(1, length(t), 4)])
+df$url<-as.character(df$url)
+df$o<-gsub("-","",as.character(df$o))
+df$obsolete<-as.character(df$obsolete)
+df$tdl<-gsub(".*@","",df$email)
+print("first records obo")
+tail(df)
+df<-df[df$obsolete!="TRUE"&df$url!="unknown",]
+tail(df)
+```
+
+```{r down}
+df$filename<-paste(tolower(df$o),".owl",sep = "")
+for(row in 1:nrow(df)) {
+ rec = df[row,]
+ filename = paste(download_dir,rec$filename,sep="")
+ #print(paste("Downloading: ",filename))
+ if(!file.exists(filename)) {
+      tryCatch({
+        print(filename)
+        print(rec$url)
+        #download.file(rec$url,filename)
+      }, warning = function(war) {
+        print(warning)
+      }, error = function(err) {
+        print(paste("MY_ERROR:  ",err))
+      }, finally = {
+        #print("done...")
+      })
+ } else {
+    print("Already downloaded")
+  }
+}
+df$download_success<-file.exists(filename)
+```
+
+

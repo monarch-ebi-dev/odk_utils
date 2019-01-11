@@ -1,0 +1,743 @@
+2018-10-24 13:35:22,926 DEBUG org.obolibrary.robot.IOHelper - Loading ontology /Volumes/EBI/corpora/obo/dinto.owl with catalog file /Volumes/EBI/corpora/obo/catalog-v001.xml
+2018-10-24 13:35:23,787 WARN  org.obolibrary.robot.IOHelper - Catalog /Volumes/EBI/corpora/obo/catalog-v001.xml does not exist. Loading ontology without catalog.
+2018-10-24 13:35:24,098 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.semanticweb.owlapi.rio.RioFunctionalSyntaxParserFactory
+2018-10-24 13:35:24,099 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.semanticweb.owlapi.rio.RioManchesterSyntaxParserFactory
+2018-10-24 13:35:24,099 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.semanticweb.owlapi.rio.RioOWLXMLParserFactory
+2018-10-24 13:35:24,100 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.openrdf.rio.binary.BinaryRDFParserFactory
+2018-10-24 13:35:24,100 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.openrdf.rio.n3.N3ParserFactory
+2018-10-24 13:35:24,101 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.openrdf.rio.nquads.NQuadsParserFactory
+2018-10-24 13:35:24,101 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.openrdf.rio.ntriples.NTriplesParserFactory
+2018-10-24 13:35:24,102 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.openrdf.rio.rdfjson.RDFJSONParserFactory
+2018-10-24 13:35:24,102 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.openrdf.rio.rdfxml.RDFXMLParserFactory
+2018-10-24 13:35:24,103 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.openrdf.rio.trix.TriXParserFactory
+2018-10-24 13:35:24,103 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.openrdf.rio.turtle.TurtleParserFactory
+2018-10-24 13:35:24,104 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.openrdf.rio.trig.TriGParserFactory
+2018-10-24 13:35:24,105 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class com.github.jsonldjava.sesame.SesameJSONLDParserFactory
+2018-10-24 13:35:24,105 DEBUG org.openrdf.rio.RDFParserRegistry - Registered service class org.semarglproject.sesame.rdf.rdfa.SesameRDFaParserFactory
+2018-10-24 13:35:24,126 DEBUG org.openrdf.rio.DatatypeHandlerRegistry - Registered service class org.openrdf.rio.datatypes.XMLSchemaDatatypeHandler
+2018-10-24 13:35:24,127 DEBUG org.openrdf.rio.DatatypeHandlerRegistry - Registered service class org.openrdf.rio.datatypes.RDFDatatypeHandler
+2018-10-24 13:35:24,128 DEBUG org.openrdf.rio.DatatypeHandlerRegistry - Registered service class org.openrdf.rio.datatypes.DBPediaDatatypeHandler
+2018-10-24 13:35:24,129 DEBUG org.openrdf.rio.DatatypeHandlerRegistry - Registered service class org.openrdf.rio.datatypes.VirtuosoGeometryDatatypeHandler
+2018-10-24 13:35:24,129 DEBUG org.openrdf.rio.DatatypeHandlerRegistry - Registered service class org.openrdf.rio.datatypes.GeoSPARQLDatatypeHandler
+2018-10-24 13:35:24,130 DEBUG org.openrdf.rio.LanguageHandlerRegistry - Registered service class org.openrdf.rio.languages.RFC3066LanguageHandler
+2018-10-24 13:35:24,172 DEBUG org.xml.sax.XMLReader - XMLReader initialized using JAXP: com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@320de594
+2018-10-24 13:35:24,198 DEBUG org.xml.sax.XMLReader - XMLReader initialized using JAXP: com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@75f65e45
+[Fatal Error] :43:91: Attribute name "data-pjax-transient" associated with an element type "meta" must be followed by the ' = ' character.
+2018-10-24 13:35:24,257 DEBUG org.semanticweb.owlapi.rdf.rdfxml.parser.TripleLogger - Total number of triples: 11
+2018-10-24 13:35:24,263 DEBUG org.semanticweb.owlapi.rdf.rdfxml.parser.TripleLogger - Loaded OntologyID(Anonymous-2)
+2018-10-24 13:35:24,270 DEBUG org.semanticweb.owlapi.rio.RioParserImpl$RioParserRDFHandler - owlParse: timing=36
+INVALID ONTOLOGY FILE ERROR Could not load a valid ontology from file: dinto.owl
+For details see: http://robot.obolibrary.org/errors#invalid-ontology-file-error
+java.io.IOException: errors#INVALID ONTOLOGY FILE ERROR Could not load a valid ontology from file: dinto.owl
+	at org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:327)
+	at org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+	at org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+	at org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+	at org.obolibrary.robot.MergeCommand.execute(MergeCommand.java:114)
+	at org.obolibrary.robot.CommandManager.executeCommand(CommandManager.java:246)
+	at org.obolibrary.robot.CommandManager.execute(CommandManager.java:190)
+	at org.obolibrary.robot.CommandManager.main(CommandManager.java:139)
+	at org.obolibrary.robot.CommandLineInterface.main(CommandLineInterface.java:54)
+Caused by: org.semanticweb.owlapi.io.UnparsableOntologyException: Problem parsing file:/Volumes/EBI/corpora/obo/dinto.owl
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) org.semanticweb.owlapi.rdf.rdfxml.parser.RDFXMLParser@335b5620
+2) org.semanticweb.owlapi.owlxml.parser.OWLXMLParser@1338fb5
+3) org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxOWLParser@6ebf0f36
+4) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RioTurtleDocumentFormatFactory@95fd655c
+5) org.semanticweb.owlapi.manchestersyntax.parser.ManchesterOWLSyntaxOntologyParser@698122b2
+6) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.NQuadsDocumentFormatFactory@6f9c39ad
+7) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.TrigDocumentFormatFactory@27e81c
+8) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RDFJsonDocumentFormatFactory@cd748dc3
+9) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.NTriplesDocumentFormatFactory@937ecd36
+10) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RDFJsonLDDocumentFormatFactory@dcacc47d
+11) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.BinaryRDFDocumentFormatFactory@3bf24493
+12) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.N3DocumentFormatFactory@9a5
+13) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RioRDFXMLDocumentFormatFactory@69b9a3bc
+14) org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser@607fbe09
+15) org.semanticweb.owlapi.rio.RioTrixParserFactory$TrixParserImpl : org.semanticweb.owlapi.formats.TrixDocumentFormatFactory@27e82d
+16) org.semanticweb.owlapi.oboformat.OBOFormatOWLAPIParser@57eda880
+17) org.semanticweb.owlapi.krss2.parser.KRSS2OWLParser@45efc20d
+18) org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RDFaDocumentFormatFactory@264e8d
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rdf.rdfxml.parser.RDFXMLParser@335b5620
+    Stack trace:
+org.semanticweb.owlapi.rdf.rdfxml.parser.RDFParserException: [line=8:column=17] Expecting rdf:RDF element.        org.semanticweb.owlapi.rdf.rdfxml.parser.RDFXMLParser.parse(RDFXMLParser.java:76)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+[line=8:column=17] Expecting rdf:RDF element.        org.semanticweb.owlapi.rdf.rdfxml.parser.RDFParser.verify(RDFParser.java:446)
+        org.semanticweb.owlapi.rdf.rdfxml.parser.StartRDF.startElement(StartRDF.java:187)
+        org.semanticweb.owlapi.rdf.rdfxml.parser.RDFParser.startElement(RDFParser.java:196)
+        com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+        com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:745)
+        com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)
+        com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:613)
+        com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3132)
+        com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:852)
+        com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.owlxml.parser.OWLXMLParser@1338fb5
+    Stack trace:
+org.xml.sax.SAXParseException; systemId: file:/Volumes/EBI/corpora/obo/dinto.owl; lineNumber: 43; columnNumber: 91; Attribute name "data-pjax-transient" associated with an element type "meta" must be followed by the ' = ' character.        org.semanticweb.owlapi.owlxml.parser.OWLXMLParser.parse(OWLXMLParser.java:66)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+Attribute name "data-pjax-transient" associated with an element type "meta" must be followed by the ' = ' character.        com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+        com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+        com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+        com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+        com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+        com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanAttribute(XMLNSDocumentScannerImpl.java:413)
+        com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:250)
+        com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+        com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+        com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxOWLParser@6ebf0f36
+    Stack trace:
+Encountered " <FULLIRI> "<!DOCTYPE html> "" at line 7, column 2.
+Was expecting one of:
+    "Ontology" ...
+    "Prefix" ...
+     (Line 0)        org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxOWLParser.parse(OWLFunctionalSyntaxOWLParser.java:79)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+Encountered " <FULLIRI> "<!DOCTYPE html> "" at line 7, column 2.
+Was expecting one of:
+    "Ontology" ...
+    "Prefix" ...
+            org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxParser.generateParseException(OWLFunctionalSyntaxParser.java:3443)
+        org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxParser.jj_consume_token(OWLFunctionalSyntaxParser.java:3363)
+        org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxParser.Ontology(OWLFunctionalSyntaxParser.java:192)
+        org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxParser.parse(OWLFunctionalSyntaxParser.java:171)
+        org.semanticweb.owlapi.functional.parser.OWLFunctionalSyntaxOWLParser.parse(OWLFunctionalSyntaxOWLParser.java:77)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RioTurtleDocumentFormatFactory@95fd655c
+    Stack trace:
+org.openrdf.rio.RDFParseException: IRI included an unencoded space: '32' [line 7]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:195)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+IRI included an unencoded space: '32' [line 7]        org.openrdf.rio.helpers.RDFParserHelper.reportFatalError(RDFParserHelper.java:441)
+        org.openrdf.rio.helpers.RDFParserBase.reportFatalError(RDFParserBase.java:704)
+        org.openrdf.rio.turtle.TurtleParser.reportFatalError(TurtleParser.java:1366)
+        org.openrdf.rio.turtle.TurtleParser.parseURI(TurtleParser.java:948)
+        org.openrdf.rio.turtle.TurtleParser.parseValue(TurtleParser.java:613)
+        org.openrdf.rio.turtle.TurtleParser.parseSubject(TurtleParser.java:448)
+        org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:382)
+        org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+        org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:250)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.manchestersyntax.parser.ManchesterOWLSyntaxOntologyParser@698122b2
+    Stack trace:
+Encountered '<!DOCTYPE html>' at line 7 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 7)        org.semanticweb.owlapi.manchestersyntax.parser.ManchesterOWLSyntaxOntologyParser.parse(ManchesterOWLSyntaxOntologyParser.java:102)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.NQuadsDocumentFormatFactory@6f9c39ad
+    Stack trace:
+org.openrdf.rio.RDFParseException: IRI included an unencoded space:   [line 7]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:195)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+IRI included an unencoded space:   [line 7]        org.openrdf.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:348)
+        org.openrdf.rio.helpers.RDFParserBase.reportError(RDFParserBase.java:641)
+        org.openrdf.rio.ntriples.NTriplesParser.reportError(NTriplesParser.java:631)
+        org.openrdf.rio.ntriples.NTriplesParser.parseUriRef(NTriplesParser.java:423)
+        org.openrdf.rio.ntriples.NTriplesParser.parseSubject(NTriplesParser.java:336)
+        org.openrdf.rio.nquads.NQuadsParser.parseQuad(NQuadsParser.java:123)
+        org.openrdf.rio.nquads.NQuadsParser.parse(NQuadsParser.java:102)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:250)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.TrigDocumentFormatFactory@27e81c
+    Stack trace:
+org.openrdf.rio.RDFParseException: IRI included an unencoded space: '32' [line 7]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:195)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+IRI included an unencoded space: '32' [line 7]        org.openrdf.rio.helpers.RDFParserHelper.reportFatalError(RDFParserHelper.java:441)
+        org.openrdf.rio.helpers.RDFParserBase.reportFatalError(RDFParserBase.java:704)
+        org.openrdf.rio.turtle.TurtleParser.reportFatalError(TurtleParser.java:1366)
+        org.openrdf.rio.turtle.TurtleParser.parseURI(TurtleParser.java:948)
+        org.openrdf.rio.turtle.TurtleParser.parseValue(TurtleParser.java:613)
+        org.openrdf.rio.trig.TriGParser.parseGraph(TriGParser.java:132)
+        org.openrdf.rio.trig.TriGParser.parseStatement(TriGParser.java:119)
+        org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:250)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RDFJsonDocumentFormatFactory@cd748dc3
+    Stack trace:
+org.openrdf.rio.RDFParseException: Found IOException during parsing [line 7, column 2]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:195)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+Found IOException during parsing [line 7, column 2]        org.openrdf.rio.helpers.RDFParserHelper.reportFatalError(RDFParserHelper.java:441)
+        org.openrdf.rio.helpers.RDFParserBase.reportFatalError(RDFParserBase.java:704)
+        org.openrdf.rio.rdfjson.RDFJSONParser.reportFatalError(RDFJSONParser.java:155)
+        org.openrdf.rio.rdfjson.RDFJSONParser.parse(RDFJSONParser.java:179)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:250)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.NTriplesDocumentFormatFactory@937ecd36
+    Stack trace:
+org.openrdf.rio.RDFParseException: IRI included an unencoded space:   [line 7]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:195)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+IRI included an unencoded space:   [line 7]        org.openrdf.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:348)
+        org.openrdf.rio.helpers.RDFParserBase.reportError(RDFParserBase.java:641)
+        org.openrdf.rio.ntriples.NTriplesParser.reportError(NTriplesParser.java:631)
+        org.openrdf.rio.ntriples.NTriplesParser.parseUriRef(NTriplesParser.java:423)
+        org.openrdf.rio.ntriples.NTriplesParser.parseSubject(NTriplesParser.java:336)
+        org.openrdf.rio.ntriples.NTriplesParser.parseTriple(NTriplesParser.java:280)
+        org.openrdf.rio.ntriples.NTriplesParser.parse(NTriplesParser.java:191)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:250)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RDFJsonLDDocumentFormatFactory@dcacc47d
+    Stack trace:
+org.openrdf.rio.RDFParseException: Could not parse JSONLD        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:195)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+Could not parse JSONLD        com.github.jsonldjava.sesame.SesameJSONLDParser.parse(SesameJSONLDParser.java:92)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:250)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: (BufferedReader); line: 7, column: 2]        com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1798)
+        com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:663)
+        com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:561)
+        com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1892)
+        com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:747)
+        com.github.jsonldjava.utils.JsonUtils.fromReader(JsonUtils.java:107)
+        com.github.jsonldjava.sesame.SesameJSONLDParser.parse(SesameJSONLDParser.java:88)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:250)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.BinaryRDFDocumentFormatFactory@3bf24493
+    Stack trace:
+org.openrdf.rio.RDFParseException: File does not contain a binary RDF document        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:195)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+File does not contain a binary RDF document        org.openrdf.rio.helpers.RDFParserHelper.reportFatalError(RDFParserHelper.java:441)
+        org.openrdf.rio.helpers.RDFParserHelper.reportFatalError(RDFParserHelper.java:424)
+        org.openrdf.rio.helpers.RDFParserBase.reportFatalError(RDFParserBase.java:693)
+        org.openrdf.rio.binary.BinaryRDFParser.parse(BinaryRDFParser.java:87)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:252)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.N3DocumentFormatFactory@9a5
+    Stack trace:
+org.openrdf.rio.RDFParseException: IRI included an unencoded space: '32' [line 7]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:195)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+IRI included an unencoded space: '32' [line 7]        org.openrdf.rio.helpers.RDFParserHelper.reportFatalError(RDFParserHelper.java:441)
+        org.openrdf.rio.helpers.RDFParserBase.reportFatalError(RDFParserBase.java:704)
+        org.openrdf.rio.turtle.TurtleParser.reportFatalError(TurtleParser.java:1366)
+        org.openrdf.rio.turtle.TurtleParser.parseURI(TurtleParser.java:948)
+        org.openrdf.rio.turtle.TurtleParser.parseValue(TurtleParser.java:613)
+        org.openrdf.rio.turtle.TurtleParser.parseSubject(TurtleParser.java:448)
+        org.openrdf.rio.turtle.TurtleParser.parseTriples(TurtleParser.java:382)
+        org.openrdf.rio.turtle.TurtleParser.parseStatement(TurtleParser.java:260)
+        org.openrdf.rio.turtle.TurtleParser.parse(TurtleParser.java:215)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:250)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RioRDFXMLDocumentFormatFactory@69b9a3bc
+    Stack trace:
+org.openrdf.rio.RDFParseException: unqualified attribute 'lang' not allowed [line 8, column 17]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:195)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+unqualified attribute 'lang' not allowed [line 8, column 17]        org.openrdf.rio.helpers.RDFParserHelper.reportError(RDFParserHelper.java:348)
+        org.openrdf.rio.helpers.RDFParserBase.reportError(RDFParserBase.java:641)
+        org.openrdf.rio.rdfxml.RDFXMLParser.reportError(RDFXMLParser.java:1269)
+        org.openrdf.rio.rdfxml.SAXFilter.checkAndCopyAttributes(SAXFilter.java:529)
+        org.openrdf.rio.rdfxml.SAXFilter.startElement(SAXFilter.java:302)
+        com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+        com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:745)
+        com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374)
+        com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:613)
+        com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3132)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser@607fbe09
+    Stack trace:
+org.semanticweb.owlapi.rdf.turtle.parser.ParseException: Encountered "" at line 7, column 1.
+Was expecting one of:
+            org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:90)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+Encountered "" at line 7, column 1.
+Was expecting one of:
+            org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.generateParseException(TurtleParser.java:1960)
+        org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.jj_consume_token(TurtleParser.java:1829)
+        org.semanticweb.owlapi.rdf.turtle.parser.TurtleParser.parseDocument(TurtleParser.java:113)
+        org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:82)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioTrixParserFactory$TrixParserImpl : org.semanticweb.owlapi.formats.TrixDocumentFormatFactory@27e82d
+    Stack trace:
+org.openrdf.rio.RDFParseException: Attribute name "data-pjax-transient" associated with an element type "meta" must be followed by the ' = ' character. [line 43, column 91]        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:195)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+Attribute name "data-pjax-transient" associated with an element type "meta" must be followed by the ' = ' character. [line 43, column 91]        org.openrdf.rio.helpers.RDFParserHelper.reportFatalError(RDFParserHelper.java:487)
+        org.openrdf.rio.helpers.RDFParserBase.reportFatalError(RDFParserBase.java:737)
+        org.semanticweb.owlapi.rio.OWLAPIRioTrixParser.parse(OWLAPIRioTrixParser.java:123)
+        org.semanticweb.owlapi.rio.OWLAPIRioTrixParser.parse(OWLAPIRioTrixParser.java:96)
+        org.semanticweb.owlapi.rio.RioTrixParserFactory$TrixParserImpl.parseDocumentSource(RioTrixParserFactory.java:89)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+Attribute name "data-pjax-transient" associated with an element type "meta" must be followed by the ' = ' character.        com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+        com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+        com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+        com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+        com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+        com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanAttribute(XMLNSDocumentScannerImpl.java:413)
+        com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:250)
+        com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+        com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+        com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.oboformat.OBOFormatOWLAPIParser@57eda880
+    Stack trace:
+LINENO: 7 - Could not find tag separator ':' in line.
+LINE: <!DOCTYPE html>        org.semanticweb.owlapi.oboformat.OBOFormatOWLAPIParser.parse(OBOFormatOWLAPIParser.java:60)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+LINENO: 7 - Could not find tag separator ':' in line.
+LINE: <!DOCTYPE html>        org.obolibrary.oboformat.parser.OBOFormatParser.error(OBOFormatParser.java:1501)
+        org.obolibrary.oboformat.parser.OBOFormatParser.getParseTag(OBOFormatParser.java:897)
+        org.obolibrary.oboformat.parser.OBOFormatParser.parseHeaderClause(OBOFormatParser.java:528)
+        org.obolibrary.oboformat.parser.OBOFormatParser.parseHeaderClauseNl(OBOFormatParser.java:521)
+        org.obolibrary.oboformat.parser.OBOFormatParser.parseHeaderFrame(OBOFormatParser.java:504)
+        org.obolibrary.oboformat.parser.OBOFormatParser.parseOBODoc(OBOFormatParser.java:377)
+        org.obolibrary.oboformat.parser.OBOFormatParser.parse(OBOFormatParser.java:335)
+        org.semanticweb.owlapi.oboformat.OBOFormatOWLAPIParser.parse(OBOFormatOWLAPIParser.java:79)
+        org.semanticweb.owlapi.oboformat.OBOFormatOWLAPIParser.parse(OBOFormatOWLAPIParser.java:58)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.krss2.parser.KRSS2OWLParser@45efc20d
+    Stack trace:
+org.semanticweb.owlapi.krss2.parser.ParseException: Encountered " ">" "<!DOCTYPE html> "" at line 7, column 1.
+Was expecting:
+    <EOF> 
+            org.semanticweb.owlapi.krss2.parser.KRSS2OWLParser.parse(KRSS2OWLParser.java:273)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+Encountered " ">" "<!DOCTYPE html> "" at line 7, column 1.
+Was expecting:
+    <EOF> 
+            org.semanticweb.owlapi.krss2.parser.KRSS2Parser.generateParseException(KRSS2Parser.java:3187)
+        org.semanticweb.owlapi.krss2.parser.KRSS2Parser.jj_consume_token(KRSS2Parser.java:3040)
+        org.semanticweb.owlapi.krss2.parser.KRSS2Parser.parse(KRSS2Parser.java:141)
+        org.semanticweb.owlapi.krss2.parser.KRSS2OWLParser.parse(KRSS2OWLParser.java:270)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+
+
+--------------------------------------------------------------------------------
+Parser: org.semanticweb.owlapi.rio.RioParserImpl : org.semanticweb.owlapi.formats.RDFaDocumentFormatFactory@264e8d
+    Stack trace:
+org.openrdf.rio.RDFParseException: org.xml.sax.SAXParseException; lineNumber: 43; columnNumber: 91; Attribute name "data-pjax-transient" associated with an element type "meta" must be followed by the ' = ' character.        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:195)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:965)
+        org.obolibrary.robot.CommandLineHelper.getInputOntologies(CommandLineHelper.java:495)
+org.xml.sax.SAXParseException; lineNumber: 43; columnNumber: 91; Attribute name "data-pjax-transient" associated with an element type "meta" must be followed by the ' = ' character.        org.semarglproject.sesame.rdf.rdfa.SesameRDFaParser.parse(SesameRDFaParser.java:111)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:250)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+        org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:209)
+org.xml.sax.SAXParseException; lineNumber: 43; columnNumber: 91; Attribute name "data-pjax-transient" associated with an element type "meta" must be followed by the ' = ' character.        org.semarglproject.rdf.rdfa.RdfaParser.processException(RdfaParser.java:1130)
+        org.semarglproject.source.XmlSource.process(XmlSource.java:50)
+        org.semarglproject.source.StreamProcessor.processInternal(StreamProcessor.java:87)
+        org.semarglproject.source.BaseStreamProcessor.process(BaseStreamProcessor.java:167)
+        org.semarglproject.source.BaseStreamProcessor.process(BaseStreamProcessor.java:154)
+        org.semarglproject.sesame.rdf.rdfa.SesameRDFaParser.parse(SesameRDFaParser.java:109)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:250)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+Attribute name "data-pjax-transient" associated with an element type "meta" must be followed by the ' = ' character.        com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1239)
+        org.semarglproject.source.XmlSource.process(XmlSource.java:48)
+        org.semarglproject.source.StreamProcessor.processInternal(StreamProcessor.java:87)
+        org.semarglproject.source.BaseStreamProcessor.process(BaseStreamProcessor.java:167)
+        org.semarglproject.source.BaseStreamProcessor.process(BaseStreamProcessor.java:154)
+        org.semarglproject.sesame.rdf.rdfa.SesameRDFaParser.parse(SesameRDFaParser.java:109)
+        org.semanticweb.owlapi.rio.RioParserImpl.parseDocumentSource(RioParserImpl.java:250)
+        org.semanticweb.owlapi.rio.RioParserImpl.parse(RioParserImpl.java:191)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:197)
+        uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+
+
+
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyFactoryImpl.loadOWLOntology(OWLOntologyFactoryImpl.java:234)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.actualParse(OWLOntologyManagerImpl.java:1098)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:1054)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1004)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:1015)
+	at org.obolibrary.robot.IOHelper.loadOntology(IOHelper.java:323)
+	... 8 more
+[Fatal Error] :43:91: Attribute name "data-pjax-transient" associated with an element type "meta" must be followed by the ' = ' character.
+INVALID ONTOLOGY FILE ERROR Could not load a valid ontology from file: dinto.owl
+For details see: http://robot.obolibrary.org/errors#invalid-ontology-file-error
+Use the -vvv option to show the stack trace.
+Use the --help option to see usage information.
+Preparing RO..
+RO was already present, not downloading again.
+Preprocessing ontologies..
+aeo.owl (Corpus: obo) was already preprocessed, skipping..
+agro.owl (Corpus: obo) was already preprocessed, skipping..
+apo.owl (Corpus: obo) was already preprocessed, skipping..
+aro.owl (Corpus: obo) was already preprocessed, skipping..
+bcgo.owl (Corpus: obo) was already preprocessed, skipping..
+bco.owl (Corpus: obo) was already preprocessed, skipping..
+bfo.owl (Corpus: obo) was already preprocessed, skipping..
+bspo.owl (Corpus: obo) was already preprocessed, skipping..
+bto.owl (Corpus: obo) was already preprocessed, skipping..
+caro.owl (Corpus: obo) was already preprocessed, skipping..
+cdao.owl (Corpus: obo) was already preprocessed, skipping..
+ceph.owl (Corpus: obo) was already preprocessed, skipping..
+chebi.owl (Corpus: obo) was already preprocessed, skipping..
+cheminf.owl (Corpus: obo) was already preprocessed, skipping..
+chmo.owl (Corpus: obo) was already preprocessed, skipping..
+cio.owl (Corpus: obo) was already preprocessed, skipping..
+cl.owl (Corpus: obo) was already preprocessed, skipping..
+clo.owl (Corpus: obo) was already preprocessed, skipping..
+cmo.owl (Corpus: obo) was already preprocessed, skipping..
+cro.owl (Corpus: obo) was already preprocessed, skipping..
+cteno.owl (Corpus: obo) was already preprocessed, skipping..
+cvdo.owl (Corpus: obo) was already preprocessed, skipping..
+ddanat.owl (Corpus: obo) was already preprocessed, skipping..
+ddpheno.owl (Corpus: obo) was already preprocessed, skipping..
+dideo.owl (Corpus: obo) was already preprocessed, skipping..
+Performing ROBOT preprocessing for dinto.owl(Corpus: obo)
+Merging /Volumes/EBI/corpora/obo/dinto.owl to /Volumes/EBI/tmp/ro/ontologies/obo_merged_dinto.owl
+None
+Removing imports from /Volumes/EBI/corpora/obo/dinto.owl to /Volumes/EBI/tmp/ro/ontologies/obo_noimports_dinto.owl
+None
+doid.owl (Corpus: obo) was already preprocessed, skipping..
+dpo.owl (Corpus: obo) was already preprocessed, skipping..
+dron.owl (Corpus: obo) was already preprocessed, skipping..
+duo.owl (Corpus: obo) was already preprocessed, skipping..
+eco.owl (Corpus: obo) was already preprocessed, skipping..
+ecocore.owl (Corpus: obo) was already preprocessed, skipping..
+ehdaa2.owl (Corpus: obo) was already preprocessed, skipping..
+emapa.owl (Corpus: obo) was already preprocessed, skipping..
+envo.owl (Corpus: obo) was already preprocessed, skipping..
+epo.owl (Corpus: obo) was already preprocessed, skipping..
+ero.owl (Corpus: obo) was already preprocessed, skipping..
+eupath.owl (Corpus: obo) was already preprocessed, skipping..
+exo.owl (Corpus: obo) was already preprocessed, skipping..
+fao.owl (Corpus: obo) was already preprocessed, skipping..
+fbbi.owl (Corpus: obo) was already preprocessed, skipping..
+fbbt.owl (Corpus: obo) was already preprocessed, skipping..
+fbcv.owl (Corpus: obo) was already preprocessed, skipping..
+fbdv.owl (Corpus: obo) was already preprocessed, skipping..
+fix.owl (Corpus: obo) was already preprocessed, skipping..
+flopo.owl (Corpus: obo) was already preprocessed, skipping..
+fma.owl (Corpus: obo) was already preprocessed, skipping..
+foodon.owl (Corpus: obo) was already preprocessed, skipping..
+fypo.owl (Corpus: obo) was already preprocessed, skipping..
+gaz.owl (Corpus: obo) was already preprocessed, skipping..
+genepio.owl (Corpus: obo) was already preprocessed, skipping..
+geno.owl (Corpus: obo) was already preprocessed, skipping..
+geo.owl (Corpus: obo) was already preprocessed, skipping..
+go.owl (Corpus: obo) was already preprocessed, skipping..
+hancestro.owl (Corpus: obo) was already preprocessed, skipping..
+hao.owl (Corpus: obo) was already preprocessed, skipping..
+hom.owl (Corpus: obo) was already preprocessed, skipping..
+hp.owl (Corpus: obo) was already preprocessed, skipping..
+hsapdv.owl (Corpus: obo) was already preprocessed, skipping..
+iao.owl (Corpus: obo) was already preprocessed, skipping..
+ico.owl (Corpus: obo) was already preprocessed, skipping..
+ido.owl (Corpus: obo) was already preprocessed, skipping..
+idomal.owl (Corpus: obo) was already preprocessed, skipping..
+ino.owl (Corpus: obo) was already preprocessed, skipping..
+kisao.owl (Corpus: obo) was already preprocessed, skipping..
+ma.owl (Corpus: obo) was already preprocessed, skipping..
+mamo.owl (Corpus: obo) was already preprocessed, skipping..
+mf.owl (Corpus: obo) was already preprocessed, skipping..
+mfmo.owl (Corpus: obo) was already preprocessed, skipping..
+mfoem.owl (Corpus: obo) was already preprocessed, skipping..
+mfomd.owl (Corpus: obo) was already preprocessed, skipping..
+mi.owl (Corpus: obo) was already preprocessed, skipping..
+miapa.owl (Corpus: obo) was already preprocessed, skipping..
+micro.owl (Corpus: obo) was already preprocessed, skipping..
+mirnao.owl (Corpus: obo) was already preprocessed, skipping..
+miro.owl (Corpus: obo) was already preprocessed, skipping..
+mmo.owl (Corpus: obo) was already preprocessed, skipping..
+mmusdv.owl (Corpus: obo) was already preprocessed, skipping..
+mod.owl (Corpus: obo) was already preprocessed, skipping..
+mondo.owl (Corpus: obo) was already preprocessed, skipping..
+mop.owl (Corpus: obo) was already preprocessed, skipping..
+mp.owl (Corpus: obo) was already preprocessed, skipping..
+mpath.owl (Corpus: obo) was already preprocessed, skipping..
+mpio.owl (Corpus: obo) was already preprocessed, skipping..
+mro.owl (Corpus: obo) was already preprocessed, skipping..
+ms.owl (Corpus: obo) was already preprocessed, skipping..
+nbo.owl (Corpus: obo) was already preprocessed, skipping..
+ncbitaxon.owl (Corpus: obo) was already preprocessed, skipping..
+ncit.owl (Corpus: obo) was already preprocessed, skipping..
+ncro.owl (Corpus: obo) was already preprocessed, skipping..
+oae.owl (Corpus: obo) was already preprocessed, skipping..
+oarcs.owl (Corpus: obo) was already preprocessed, skipping..
+oba.owl (Corpus: obo) was already preprocessed, skipping..
+obcs.owl (Corpus: obo) was already preprocessed, skipping..
+obi.owl (Corpus: obo) was already preprocessed, skipping..
+obib.owl (Corpus: obo) was already preprocessed, skipping..
+ogg.owl (Corpus: obo) was already preprocessed, skipping..
+ogi.owl (Corpus: obo) was already preprocessed, skipping..
+ogms.owl (Corpus: obo) was already preprocessed, skipping..
+ogsf.owl (Corpus: obo) was already preprocessed, skipping..
+ohd.owl (Corpus: obo) was already preprocessed, skipping..
+ohmi.owl (Corpus: obo) was already preprocessed, skipping..
+olatdv.owl (Corpus: obo) was already preprocessed, skipping..
+omiabis.owl (Corpus: obo) was already preprocessed, skipping..
+omit.owl (Corpus: obo) was already preprocessed, skipping..
+omp.owl (Corpus: obo) was already preprocessed, skipping..
+omrse.owl (Corpus: obo) was already preprocessed, skipping..
+ontoneo.owl (Corpus: obo) was already preprocessed, skipping..
+oostt.owl (Corpus: obo) was already preprocessed, skipping..
+opl.owl (Corpus: obo) was already preprocessed, skipping..
+ovae.owl (Corpus: obo) was already preprocessed, skipping..
+pato.owl (Corpus: obo) was already preprocessed, skipping..
+pco.owl (Corpus: obo) was already preprocessed, skipping..
+pdro.owl (Corpus: obo) was already preprocessed, skipping..
+pdumdv.owl (Corpus: obo) was already preprocessed, skipping..
+peco.owl (Corpus: obo) was already preprocessed, skipping..
+plana.owl (Corpus: obo) was already preprocessed, skipping..
+po.owl (Corpus: obo) was already preprocessed, skipping..
+poro.owl (Corpus: obo) was already preprocessed, skipping..
+ppo.owl (Corpus: obo) was already preprocessed, skipping..
+pr.owl (Corpus: obo) was already preprocessed, skipping..
+pw.owl (Corpus: obo) was already preprocessed, skipping..
+rex.owl (Corpus: obo) was already preprocessed, skipping..
+rnao.owl (Corpus: obo) was already preprocessed, skipping..
+ro.owl (Corpus: obo) was already preprocessed, skipping..
+rs.owl (Corpus: obo) was already preprocessed, skipping..
+rxno.owl (Corpus: obo) was already preprocessed, skipping..
+sbo.owl (Corpus: obo) was already preprocessed, skipping..
+sep.owl (Corpus: obo) was already preprocessed, skipping..
+sepio.owl (Corpus: obo) was already preprocessed, skipping..
+sibo.owl (Corpus: obo) was already preprocessed, skipping..
+so.owl (Corpus: obo) was already preprocessed, skipping..
+spd.owl (Corpus: obo) was already preprocessed, skipping..
+stato.owl (Corpus: obo) was already preprocessed, skipping..
+swo.owl (Corpus: obo) was already preprocessed, skipping..
+symp.owl (Corpus: obo) was already preprocessed, skipping..
+tads.owl (Corpus: obo) was already preprocessed, skipping..
+taxrank.owl (Corpus: obo) was already preprocessed, skipping..
+tgma.owl (Corpus: obo) was already preprocessed, skipping..
+to.owl (Corpus: obo) was already preprocessed, skipping..
+trans.owl (Corpus: obo) was already preprocessed, skipping..
+tto.owl (Corpus: obo) was already preprocessed, skipping..
+uberon.owl (Corpus: obo) was already preprocessed, skipping..
+uo.owl (Corpus: obo) was already preprocessed, skipping..
+upheno.owl (Corpus: obo) was already preprocessed, skipping..
+vario.owl (Corpus: obo) was already preprocessed, skipping..
+vo.owl (Corpus: obo) was already preprocessed, skipping..
+vt.owl (Corpus: obo) was already preprocessed, skipping..
+vto.owl (Corpus: obo) was already preprocessed, skipping..
+wbbt.owl (Corpus: obo) was already preprocessed, skipping..
+wbls.owl (Corpus: obo) was already preprocessed, skipping..
+wbphenotype.owl (Corpus: obo) was already preprocessed, skipping..
+xao.owl (Corpus: obo) was already preprocessed, skipping..
+xco.owl (Corpus: obo) was already preprocessed, skipping..
+xlmod.owl (Corpus: obo) was already preprocessed, skipping..
+zeco.owl (Corpus: obo) was already preprocessed, skipping..
+zfa.owl (Corpus: obo) was already preprocessed, skipping..
+zfs.owl (Corpus: obo) was already preprocessed, skipping..

@@ -1,0 +1,64 @@
+---
+title: "BioPortal Download"
+output:
+  html_document:
+    df_print: paged
+editor_options:
+  chunk_output_type: console
+---
+
+# Download AgroPortal Snapshot
+
+```{r metadata}
+library(jsonlite)
+apikey<-"0798b515-1ad4-4585-a9b4-2b4ad0f44f5e"
+download_dir<-"/data/bp/"
+bp_dl_pre<-"http://data.bioontology.org/ontologies/"
+bp_dl_post<-"/download?apikey=0798b515-1ad4-4585-a9b4-2b4ad0f44f5e"
+
+bp_ont_rest<-paste("http://data.bioontology.org/ontologies_full?apikey=",apikey,sep="")
+bp_raw <- fromJSON(bp_ont_rest, flatten = FALSE, simplifyDataFrame = FALSE, simplifyVector = FALSE, simplifyMatrix = FALSE)
+
+# Make sure a download directory called download exists wherever your working directory is
+if (!dir.exists(download_dir)){
+  print("Directory does not exist, create and run again: ")
+  print(download_dir)
+  stop("Directory does not exist, create and run again: ")
+}
+```
+
+```{r prepare}
+t<-unlist(lapply(bp_raw,FUN = function(x) {
+  return(x$ontology$acronym)
+}))
+df<-data.frame(o=t)
+df$url<-paste(bp_dl_pre,toupper(df$o),bp_dl_post,sep="")
+head(df)
+```
+
+```{r down}
+df$filename<-paste(tolower(df$o),".owl",sep = "")
+for(row in 1:nrow(df)) {
+ rec = df[row,]
+ filename = paste(download_dir,rec$filename,sep="")
+ #print(paste("Downloading: ",filename))
+ if(!file.exists(filename)) {
+      tryCatch({
+        print(filename)
+        print(rec$url)
+        download.file(rec$url,filename)
+      }, warning = function(war) {
+        print(warning)
+      }, error = function(err) {
+        print(paste("MY_ERROR:  ",err))
+      }, finally = {
+        print("done...")
+      })
+ } else {
+    print("Already downloaded")
+  }
+}
+df$download_success<-file.exists(filename)
+```
+
+
