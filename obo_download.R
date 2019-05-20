@@ -2,12 +2,12 @@
   
 library(yaml)
 
-corpusid="obo"
-outdir="/Volumes/EBI/corpora/"
+corpusid="obo20190313"
+outdir="/data/corpora/"
 obo="http://obofoundry.org/registry/ontologies.yml"
 
 download_dir<-paste(outdir,corpusid,"/",sep="")
-metadata<-paste(outdir,"rosurvey_corpus_",corpusid,".csv",sep="")
+metadata<-paste(outdir,"patosurvey_corpus_",corpusid,".csv",sep="")
 obo_raw <- yaml.load_file(obo)
 head(obo_raw)
 
