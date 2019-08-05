@@ -16,7 +16,7 @@ import pandas as pd
 #pattern_dir = sys.argv[1]
 #md_file = sys.argv[2]
 
-pattern_dir="/ws/upheno/src/patterns/dosdp-patterns"
+pattern_dir="/ws/upheno/src/patterns/dosdp-dev"
 md_file=pattern_dir+"/README.md"
 
 lines = []
