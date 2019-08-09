@@ -39,11 +39,17 @@ for filename in files:
             splitted = " ".join(re.sub('([A-Z][a-z]+)', r' \1', re.sub('([A-Z]+)', r' \1', fn)).split()).replace(".yaml","")
             splitted = splitted.lower().capitalize()
             variables = ""
+            contributors = ""
 
 
             for v in y['vars']:
                 vs = re.sub("[^0-9a-zA-Z _]", "", y['vars'][v])
-                variables = variables+vs+", "
+                vsv = re.sub("[']", "", y['vars'][v])
+                variables = variables+vs+" ("+y['classes'][vsv]+"), "
+            
+            if 'contributors' in y:    
+                for v in y['contributors']:
+                    contributors = contributors+"["+re.sub("https[:][/][/]orcid[.]org[/]","",v)+"]("+v+"), "
 
             lines.append("### "+splitted)
             lines.append("*" + y['description']+"*")
@@ -53,6 +59,7 @@ for filename in files:
             lines.append("| IRI | " + y['pattern_iri'] + " |")
             lines.append("| Name | " + y['pattern_name'] + " |")
             lines.append("| Variables | "+variables+" |")
+            lines.append("| Contributors | "+contributors+" |")
             lines.append("")
 
         except yaml.YAMLError as exc:
