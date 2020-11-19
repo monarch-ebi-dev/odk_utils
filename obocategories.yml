@@ -1,0 +1,84 @@
+categories:
+- category: upper
+  subsume:
+    - relations
+- category: anatomy and development
+  subsume:
+    - Drosophilid anatomy
+    - cells
+    - development
+    - anatomy
+    - developemental life stage
+- category: health
+  subsume:
+    - clinical
+    - biomedical, health
+    - medicine
+    - adverse events, health
+    - disease
+    - stuff
+    - medical
+- category: phenotype
+  subsume:
+    - plant phenotypes
+    - vertebrate traits
+- category: experiments
+  subsume:
+    - MS experiments
+    - experimental conditions
+    - imaging experiments
+    - scientific claims, evidence
+    - provenance
+- category: environment
+  subsume:
+  - ecological functions, ecological interactions
+  - collections of organisms
+- category: biochemistry
+  subsume: 
+    - Major Histocompatibility Complex
+    - proteins
+    - molecular structure
+    - lipids
+    - glycan structure
+    - toxicity
+    - MS cross-linker reagents
+    - biological sequence
+- category: microbiology
+- category: agriculture
+  subsume:
+    - agronomy
+    - plant disease and abiotic stress
+- category: diet, metabolomics and nutrition
+  subsume: 
+    - food
+    - nutrition, nutritional studies, nutrition professionals
+    - metabolomics and nutrition
+- category: biological systems
+  subsume: 
+    - biological process
+    - biology
+    - pathways
+    - behavior
+    - genotype-to-phenotype associations
+- category: information technology
+  subsume:
+    - algorithms
+    - statistics
+    - software
+- category: organisms
+  subsume:
+    - taxonomy
+    - biodiversity collections
+    - cohort studies
+    - ancestry
+    - functional genomics, population biology, clinical epidemiology, and microbiomes
+- category: information
+  subsume:
+    - information
+    - documentation
+    - biological nomenclature
+    - ontology term annotation
+    - learning systems
+    - scholarly contribution roles
+    - resources
+    - clinical documentation

@@ -1,0 +1,162 @@
+category	ontology	domain
+agriculture	agro	agronomy
+agriculture	pso	plant disease and abiotic stress
+anatomy and development	aeo	anatomy
+anatomy and development	amphx	anatomy
+anatomy and development	bila	anatomy
+anatomy and development	bspo	anatomy
+anatomy and development	bto	anatomy
+anatomy and development	caro	anatomy
+anatomy and development	ceph	anatomy
+anatomy and development	cl	cells
+anatomy and development	clyh	anatomy
+anatomy and development	cteno	anatomy
+anatomy and development	ddanat	anatomy
+anatomy and development	ddpheno	anatomy
+anatomy and development	ecao	anatomy
+anatomy and development	ehdaa2	anatomy
+anatomy and development	emap	anatomy
+anatomy and development	emapa	anatomy
+anatomy and development	fao	anatomy
+anatomy and development	fbbt	Drosophilid anatomy
+anatomy and development	fbdv	development
+anatomy and development	fma	anatomy
+anatomy and development	hao	anatomy
+anatomy and development	ma	anatomy
+anatomy and development	mfmo	anatomy
+anatomy and development	mfo	anatomy
+anatomy and development	oarcs	anatomy
+anatomy and development	plana	anatomy
+anatomy and development	po	anatomy and development
+anatomy and development	poro	anatomy
+anatomy and development	spd	anatomy
+anatomy and development	tads	anatomy
+anatomy and development	tao	anatomy
+anatomy and development	tgma	anatomy
+anatomy and development	uberon	anatomy
+anatomy and development	vsao	anatomy
+anatomy and development	wbbt	anatomy
+anatomy and development	wbls	developemental life stage
+anatomy and development	xao	anatomy
+anatomy and development	zfa	anatomy
+anatomy and development	zfs	anatomy
+biochemistry	chebi	biochemistry
+biochemistry	cheminf	biochemistry
+biochemistry	chiro	biochemistry
+biochemistry	gno	glycan structure
+biochemistry	lipro	lipids
+biochemistry	mod	proteins
+biochemistry	mro	Major Histocompatibility Complex
+biochemistry	pr	proteins
+biochemistry	resid	proteins
+biochemistry	rnao	molecular structure
+biochemistry	sbo	biochemistry
+biochemistry	so	biological sequence
+biochemistry	txpo	toxicity
+biochemistry	xlmod	MS cross-linker reagents
+biological systems	geno	genotype-to-phenotype associations
+biological systems	go	biology
+biological systems	nbo	behavior
+biological systems	pw	biological process
+biological systems	sibo	behavior
+biological systems	upa	pathways
+diet, metabolomics and nutrition	fideo	diet, metabolomics and nutrition
+diet, metabolomics and nutrition	fobi	metabolomics and nutrition
+diet, metabolomics and nutrition	foodon	food
+diet, metabolomics and nutrition	ons	nutrition, nutritional studies, nutrition professionals
+environment	ecocore	ecological functions, ecological interactions
+environment	ecto	environment
+environment	envo	environment
+environment	eo	environment
+environment	miro	environment
+environment	pco	collections of organisms
+environment	zeco	environment
+experiments	eco	experiments
+experiments	fbbi	imaging experiments
+experiments	mco	experimental conditions
+experiments	mi	experiments
+experiments	mo	experiments
+experiments	ms	MS experiments
+experiments	ncro	experiments
+experiments	nmr	experiments
+experiments	obi	experiments
+experiments	ornaseq	experiments
+experiments	peco	experimental conditions
+experiments	sep	provenance
+experiments	sepio	scientific claims, evidence
+health	aero	health
+health	apollo_sv	health
+health	chmo	health
+health	cmo	clinical
+health	cvdo	health
+health	dinto	health
+health	doid	disease
+health	dron	health
+health	exo	health
+health	flu	health
+health	genepio	health
+health	ido	health
+health	idomal	health
+health	maxo	stuff
+health	mf	health
+health	mfoem	health
+health	mfomd	health
+health	mmo	clinical
+health	mondo	disease
+health	mpath	health
+health	mpio	health
+health	oae	adverse events, health
+health	obib	health
+health	ogms	medicine
+health	ohd	health
+health	omiabis	health
+health	omrse	medicine
+health	ontoneo	biomedical, health
+health	oostt	health
+health	pdro	health
+health	symp	disease
+health	trans	disease
+health	vo	health
+health	xco	clinical
+information	cro	scholarly contribution roles
+information	ero	resources
+information	iao	information
+information	labo	clinical documentation
+information	nomen	biological nomenclature
+information	omo	ontology term annotation
+information	psdo	learning systems
+information technology	kisao	algorithms
+information technology	obcs	statistics
+information technology	stato	statistics
+information technology	swo	software
+organisms	bco	biodiversity collections
+organisms	eupath	functional genomics, population biology, clinical epidemiology, and microbiomes
+organisms	fbsp	taxonomy
+organisms	gecko	cohort studies
+organisms	hancestro	ancestry
+organisms	ncbitaxon	taxonomy
+organisms	taxrank	taxonomy
+organisms	tto	taxonomy
+other	fbcv	
+phenotype	apo	phenotype
+phenotype	dpo	phenotype
+phenotype	flopo	phenotype
+phenotype	fovt	vertebrate traits
+phenotype	fypo	phenotype
+phenotype	hp	phenotype
+phenotype	micro	phenotype
+phenotype	mp	phenotype
+phenotype	oba	phenotype
+phenotype	omp	phenotype
+phenotype	pato	phenotype
+phenotype	phipo	phenotype
+phenotype	planp	phenotype
+phenotype	ppo	plant phenotypes
+phenotype	to	phenotype
+phenotype	uo	phenotype
+phenotype	wbphenotype	phenotype
+phenotype	xpo	phenotype
+phenotype	zp	phenotype
+upper	bfo	upper
+upper	cob	upper
+upper	ro	relations
